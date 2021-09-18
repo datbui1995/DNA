@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E8F787A26F3534800335174 /* SinglyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8F787926F3534800335174 /* SinglyLinkedList.swift */; };
 		9EAC380426EE18550080844D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC380326EE18550080844D /* AppDelegate.swift */; };
 		9EAC380626EE18550080844D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC380526EE18550080844D /* SceneDelegate.swift */; };
 		9EAC380826EE18550080844D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC380726EE18550080844D /* ViewController.swift */; };
@@ -15,6 +16,10 @@
 		9EAC381026EE18560080844D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EAC380E26EE18560080844D /* LaunchScreen.storyboard */; };
 		9EAC381B26EE18560080844D /* DNATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC381A26EE18560080844D /* DNATests.swift */; };
 		9EAC382626EE18570080844D /* DNAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC382526EE18570080844D /* DNAUITests.swift */; };
+		9EAC383526EE188A0080844D /* DynamicArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAC383426EE188A0080844D /* DynamicArray.swift */; };
+		9EE0200F26F08E340037F949 /* DoublyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE0200E26F08E340037F949 /* DoublyLinkedList.swift */; };
+		9EE0201126F0A7F10037F949 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE0201026F0A7F10037F949 /* Node.swift */; };
+		9EF3615826F67DF800CE8D55 /* SinglyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF3615726F67DF800CE8D55 /* SinglyNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E8F787926F3534800335174 /* SinglyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglyLinkedList.swift; sourceTree = "<group>"; };
 		9EAC380026EE18550080844D /* DNA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAC380326EE18550080844D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EAC380526EE18550080844D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,10 @@
 		9EAC382126EE18570080844D /* DNAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAC382526EE18570080844D /* DNAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNAUITests.swift; sourceTree = "<group>"; };
 		9EAC382726EE18570080844D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EAC383426EE188A0080844D /* DynamicArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicArray.swift; sourceTree = "<group>"; };
+		9EE0200E26F08E340037F949 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
+		9EE0201026F0A7F10037F949 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		9EF3615726F67DF800CE8D55 /* SinglyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglyNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,8 @@
 		9EAC380226EE18550080844D /* DNA */ = {
 			isa = PBXGroup;
 			children = (
+				9EE0200D26F08E240037F949 /* LinkedList */,
+				9EAC383326EE187E0080844D /* Array */,
 				9EAC380326EE18550080844D /* AppDelegate.swift */,
 				9EAC380526EE18550080844D /* SceneDelegate.swift */,
 				9EAC380726EE18550080844D /* ViewController.swift */,
@@ -126,6 +138,25 @@
 				9EAC382726EE18570080844D /* Info.plist */,
 			);
 			path = DNAUITests;
+			sourceTree = "<group>";
+		};
+		9EAC383326EE187E0080844D /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				9EAC383426EE188A0080844D /* DynamicArray.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		9EE0200D26F08E240037F949 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				9EE0200E26F08E340037F949 /* DoublyLinkedList.swift */,
+				9E8F787926F3534800335174 /* SinglyLinkedList.swift */,
+				9EE0201026F0A7F10037F949 /* Node.swift */,
+				9EF3615726F67DF800CE8D55 /* SinglyNode.swift */,
+			);
+			path = LinkedList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +290,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EAC380826EE18550080844D /* ViewController.swift in Sources */,
+				9EAC383526EE188A0080844D /* DynamicArray.swift in Sources */,
+				9EE0200F26F08E340037F949 /* DoublyLinkedList.swift in Sources */,
+				9EE0201126F0A7F10037F949 /* Node.swift in Sources */,
+				9E8F787A26F3534800335174 /* SinglyLinkedList.swift in Sources */,
 				9EAC380426EE18550080844D /* AppDelegate.swift in Sources */,
 				9EAC380626EE18550080844D /* SceneDelegate.swift in Sources */,
+				9EF3615826F67DF800CE8D55 /* SinglyNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GVQ3X8X5LZ;
 				INFOPLIST_FILE = DNA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,6 +495,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GVQ3X8X5LZ;
 				INFOPLIST_FILE = DNA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
