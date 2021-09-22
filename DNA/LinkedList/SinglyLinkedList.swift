@@ -23,8 +23,8 @@ class SinglyLinkedList<T> {
         var node = head
         var text = "["
         while node != nil {
-            node = node?.next
             text += "\(node?.valueDescription ?? "N/A")"
+            node = node?.next
             if node != nil {
                 text += ", "
             }

@@ -8,14 +8,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         view.backgroundColor = .green
         
-        implementLinkedList()
+        implementSinglyLinkedList()
     }
     
     // Dynamic Array
@@ -27,13 +27,20 @@ class ViewController: UIViewController {
         array.printElement()
     }
     
-    // LinkedList
-    private func implementLinkedList() {
+    // Doubly Linked List
+    private func implementDoublyLinkedList() {
         let linkedList = DoublyLinkedList<String>()
         linkedList.append(node: Node(value: "First Append"))
         linkedList.append(node: Node(value: "Second Append"))
         linkedList.append(node: Node(value: "Third Append"))
         linkedList.append(node: Node(value: "Forth Append"))
+    }
+    
+    private func implementSinglyLinkedList() {
+        let linkedList = SinglyLinkedList<String>()
+        linkedList.append(node: SinglyNode(value: "First"))
+        linkedList.append(node: SinglyNode(value: "Second"))
+        print(linkedList.description)
     }
 }
 
