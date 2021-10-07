@@ -1,9 +1,12 @@
-//
-//  LinkedList.swift
-//  DNA
-//
-//  Created by Dat Bui on 14/09/2021.
-//
+
+/*
+ Linked list is a linear data structure, in which elements are not stored at contiguous memory locations.
+ A linked list consists of nodes where each node contains data field and reference to the next node of the list
+ Runtime access: O(n)
+ Runtime insert: O(n)
+ Runtime delete: O(n)
+ Runtime append: O(1)
+ */
 
 import Foundation
 

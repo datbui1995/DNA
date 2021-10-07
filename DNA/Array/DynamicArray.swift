@@ -1,3 +1,16 @@
+
+
+/*
+ Array is a collection of items stored at contiguous memory locations. The idea is to store multiple items of same type together.
+ This makes it easier to calculate the position of each element by simply adding an offset to a base value.
+ Runtime access: O(1)
+ Runtime insert: O(n)
+ Runtime delete: O(n)
+ Runtime append: O(1)
+ 
+ */
+
+
 class DynamicArray {
     
     private var capacity: Int
