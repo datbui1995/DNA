@@ -8,8 +8,8 @@
 import Foundation
 
 class SinglyLinkedList<T> {
-    var head: SinglyNode<T>?
-    var tail: SinglyNode<T>?
+    private var head: SinglyNode<T>?
+    private var tail: SinglyNode<T>?
     
     public var first: SinglyNode<T>? {
         head
@@ -42,26 +42,53 @@ class SinglyLinkedList<T> {
         tail = node
     }
     
+    @discardableResult
     public func nodeAt(index: Int) -> SinglyNode<T>? {
         if head == nil || tail == nil { return nil }
         
-        if index >= 0 {
-            var count: Int = 0
-            var node = head
-            while node != nil {
-                node = node?.next
-                count += 1
-                if count == index {
-                    return node
-                }
+        if index < 0 { return nil }
+        var count: Int = 0
+        var node = head
+        while node != nil {
+            if count == index {
+                return node
             }
+            node = node?.next
+            count += 1
         }
         
         return nil
     }
     
-    public func removeLast() {
+    @discardableResult
+    public func removeLast() -> T? {
+        if head == nil || tail == nil { return nil }
         
+        guard head?.next != nil else { return pop() }
+        
+        var previous = head
+        var current = head
+        
+        while let next = current?.next {
+            previous = current
+            current = next
+        }
+        
+        previous?.next = nil
+        tail = previous
+        
+        return current?.value
+    }
+    
+    @discardableResult
+    func pop() -> T? { // remove first element of LinkedList
+        defer {
+            head = head?.next
+            if isEmpty {
+                tail = nil
+            }
+        }
+        return head?.value
     }
     
     public func count() -> Int {

@@ -11,8 +11,8 @@
 import Foundation
 
 public class DoublyLinkedList<T> {
-    var head: Node<T>?
-    var tail: Node<T>?
+    private var head: Node<T>?
+    private var tail: Node<T>?
     
     public var isEmpty: Bool {
         return head == nil
@@ -52,16 +52,15 @@ public class DoublyLinkedList<T> {
     public func nodeAt(index: Int) -> Node<T>? {
         if head == nil || tail == nil { return nil }
         
-        if index >= 0 {
-            var node = head
-            var count = 0
-            while node != nil {
-                node = node?.next
-                count += 1
-                if count == index {
-                    return node
-                }
+        if index < 0 { return nil }
+        var node = head
+        var count = 0
+        while node != nil {
+            if count == index {
+                return node
             }
+            node = node?.next
+            count += 1
         }
         
         return nil
