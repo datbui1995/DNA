@@ -49,6 +49,7 @@ public class DoublyLinkedList<T> {
         tail = node
     }
     
+    @discardableResult
     public func nodeAt(index: Int) -> Node<T>? {
         if head == nil || tail == nil { return nil }
         
