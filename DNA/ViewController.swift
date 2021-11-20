@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         view.backgroundColor = .green
-        
+        implementHashTable()
     }
     
     // Dynamic Array
@@ -62,6 +62,15 @@ class ViewController: UIViewController {
         queue.dequeue()
         queue.peek()
         queue.printAll()
+    }
+    
+    private func implementHashTable() {
+        var hashTable = HashTable<String, String>(capacity: 10)
+        print("name before is \(String(describing: hashTable["name"]))")
+        hashTable["name"] = "Davis"
+        print("name after is \(String(describing: hashTable["name"]))")
+        hashTable["name"] = "Davissssss"
+        print("name final is \(String(describing: hashTable["name"]))")
     }
 }
 
