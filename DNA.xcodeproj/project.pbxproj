@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		723DDD692EDE1523008E0EEF /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723DDD682EDE1522008E0EEF /* Sort.swift */; };
 		9E5775F0273081B800A7F66D /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5775EF273081B800A7F66D /* HashTable.swift */; };
 		9E8F787A26F3534800335174 /* SinglyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8F787926F3534800335174 /* SinglyLinkedList.swift */; };
 		9E94A6C2286B73A6000BAAC0 /* Solution+Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E94A6C1286B73A6000BAAC0 /* Solution+Tree.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		723DDD682EDE1522008E0EEF /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		9E5775EF273081B800A7F66D /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
 		9E8F787926F3534800335174 /* SinglyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglyLinkedList.swift; sourceTree = "<group>"; };
 		9E94A6C1286B73A6000BAAC0 /* Solution+Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Solution+Tree.swift"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		9EAC383326EE187E0080844D /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				723DDD682EDE1522008E0EEF /* Sort.swift */,
 				9EAC383426EE188A0080844D /* DynamicArray.swift */,
 			);
 			path = Array;
@@ -355,6 +358,7 @@
 				9EA8BD9A272B3B85004F21CF /* Queue.swift in Sources */,
 				9E94A6C2286B73A6000BAAC0 /* Solution+Tree.swift in Sources */,
 				9EDA507027E72E2700AA6D02 /* Solution+Array.swift in Sources */,
+				723DDD692EDE1523008E0EEF /* Sort.swift in Sources */,
 				9E8F787A26F3534800335174 /* SinglyLinkedList.swift in Sources */,
 				9E5775F0273081B800A7F66D /* HashTable.swift in Sources */,
 				9EAC380426EE18550080844D /* AppDelegate.swift in Sources */,
