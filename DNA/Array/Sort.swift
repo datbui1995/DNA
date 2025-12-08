@@ -41,6 +41,23 @@ class CustomSort {
 
         return final
     }
+    
+    func selectionSort(arr: [Int]) -> [Int] {
+        var minIndex = 0
+        var arr = arr
+        for i in 0..<arr.count {
+            minIndex = i
+            for j in i+1..<arr.count {
+                if arr[j] < arr[minIndex] {
+                    minIndex = j
+                }
+            }
+            let temp = arr[minIndex]
+            arr[minIndex] = arr[i]
+            arr[i] = temp
+        }
+        return arr
+    }
 }
 
 fileprivate extension CustomSort {
